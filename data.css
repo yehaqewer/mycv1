@@ -1,98 +1,6 @@
-/* General Body Style */
-body {
-    font-family: 'Arial', sans-serif;
-    background-color: #F0F4F8; /* Light grayish-blue background */
-    color: #333;
-    margin: 0;
-    padding: 0;
-}
-
-/* Container Styling */
-.container {
-    background-color: #FFFFFF; /* Bright white background */
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-}
-
-h1.text-center {
-    font-size: 36px;
-    margin-bottom: 20px;
-    font-weight: bold;
-    color: #2E3A59; /* Dark blue */
-}
-
-/* Button Style */
-button, .btn {
-    background-color: #1E90FF; /* Dodger blue button */
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 8px;
-    cursor: pointer;
-    font-size: 14px;
-    transition: background-color 0.3s ease, box-shadow 0.3s ease;
-}
-
-button:hover, .btn:hover {
-    background-color: #4682B4; /* Steel blue on hover */
-    box-shadow: 0 2px 8px rgba(30, 144, 255, 0.5);
-}
-
-/* Stylish Checkbox */
-.styled-checkbox {
-    position: absolute;
-    opacity: 0;
-}
-
-.styled-checkbox + label {
-    position: relative;
-    padding-left: 45px;
-    cursor: pointer;
-    font-size: 16px;
-    user-select: none;
-    padding: 10px 15px;
-    border-radius: 8px;
-    background-color: #5F9EA0; /* Cadet blue */
-    color: white;
-    display: flex;
-    align-items: center;
-}
-
-.styled-checkbox + label:before {
-    content: "";
-    position: absolute;
-    left: 10px;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 18px;
-    height: 18px;
-    border: 2px solid white;
-    border-radius: 4px;
-    background: transparent;
-    transition: background-color 0.3s ease, border-color 0.3s ease;
-}
-
-.styled-checkbox:checked + label:before {
-    background-color: white;
-    border-color: white;
-}
-
-.styled-checkbox:checked + label:after {
-    content: "\2713"; /* Checkmark */
-    position: absolute;
-    left: 12px;
-    top: 50%;
-    transform: translateY(-50%);
-    color: #5F9EA0; /* Cadet blue */
-    font-size: 18px;
-}
-
-/* Checkbox Group */
+/* Checkbox Group - Simple Styling */
 .checkbox-group {
     display: flex;
-    margin-left: 50px;
-    margin-right: 50px;
     justify-content: space-evenly;
     gap: 15px;
     margin-bottom: 15px;
@@ -100,114 +8,46 @@ button:hover, .btn:hover {
     color: #2E3A59; /* Dark blue */
 }
 
-/* Container for the checkbox group */
-.checkbox-group-container {
-    padding-top: 20px;
-    padding-bottom: 10px;
-    border-radius: 8px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    margin-bottom: 15px;
-    margin-top: 15px;
-    background-color: #E0E5EC; /* Soft light gray-blue */
+.styled-checkbox {
+    position: absolute;
+    opacity: 0;
 }
 
-/* Table Styling */
-table {
-    width: 100%;
-    border-collapse: collapse;
-    border-radius: 8px;
-    overflow: hidden;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-thead th {
-    background-color: #2E3A59; /* Dark blue */
-    color: white;
-    padding: 12px;
-    font-size: 14px;
-    border-bottom: 2px solid #1C2A3A; /* Slightly darker blue */
-}
-
-tfoot th {
-    background-color: #A9A9A9; /* Dark gray */
-    color: white;
-    padding: 12px;
-}
-
-/* Specifically targeting DataTables' row class */
-table.dataTable tbody tr {
-    background-color: #F8F9FA !important; /* Light gray background for rows */
-}
-
-table.dataTable tbody tr:nth-child(odd) {
-    background-color: #E0E5EC !important; /* Slightly darker gray alternate rows */
-}
-
-table.dataTable tbody tr:hover {
-    background-color: #D1D9E0 !important; /* Slightly darker hover color */
-}
-
-tbody td {
-    padding: 12px;
+.styled-checkbox + label {
+    position: relative;
+    padding-left: 30px;
+    cursor: pointer;
+    font-size: 16px;
+    user-select: none;
     color: #333;
-    border-bottom: 1px solid #ddd;
-    text-align: center;
+    display: flex;
+    align-items: center;
 }
 
-/* Input Search */
-.search-row input {
-    border: 1px solid #1E90FF; /* Dodger blue */
-    padding: 8px;
-    border-radius: 8px;
-    width: 120%;
+.styled-checkbox + label:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 18px;
+    height: 18px;
+    border: 2px solid #2E3A59; /* Dark blue */
+    border-radius: 4px;
+    background: transparent;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.styled-checkbox:checked + label:before {
+    background-color: #2E3A59; /* Dark blue */
+}
+
+.styled-checkbox:checked + label:after {
+    content: "\2713"; /* Checkmark */
+    position: absolute;
+    left: 4px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: white;
     font-size: 14px;
-    margin: 5px 0;
-    transition: border-color 0.3s ease;
-}
-
-.search-row input:focus {
-    border-color: #4682B4; /* Steel blue */
-    outline: none;
-}
-
-/* Pagination and Info */
-div.dataTables_wrapper div.dataTables_paginate .paginate_button {
-    background-color: #2E3A59 !important; /* Dark blue background */
-    border: 2px solid #1E90FF !important; /* Dodger blue border */
-    color: white !important;
-    padding: 8px 15px !important;
-    margin: 0 5px !important;
-    border-radius: 50% !important;
-    transition: background-color 0.3s, box-shadow 0.3s !important;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1) !important;
-    cursor: pointer !important;
-    font-size: 14px !important;
-}
-
-div.dataTables_wrapper div.dataTables_paginate .paginate_button:hover {
-    background-color: #4682B4 !important; /* Steel blue hover background */
-    color: white !important;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2) !important;
-}
-
-div.dataTables_wrapper div.dataTables_paginate .paginate_button.current {
-    background-color: #4682B4 !important;
-    color: white !important;
-    border-color: #2E3A59 !important;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3) !important;
-    cursor: default !important;
-}
-
-div.dataTables_wrapper div.dataTables_paginate .paginate_button.disabled {
-    background-color: #D3D3D3 !important;
-    color: #888 !important;
-    border-color: #ddd !important;
-    cursor: not-allowed !important;
-    box-shadow: none !important;
-}
-
-/* Pagination ellipses (...) style */
-div.dataTables_wrapper div.dataTables_paginate .ellipsis {
-    color: #4682B4 !important;
-    font-weight: bold !important;
 }
