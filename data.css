@@ -1,197 +1,196 @@
-/* General Body Style */
+/* data.css */
+
+/* General Styling */
 body {
-    font-family: 'Arial', sans-serif;
-    background-color: #F0F4F8; /* Light grayish-blue background */
+    background-color: #f4f7fa;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: #333;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    overflow-x: hidden;
 }
 
+h1 {
+    color: #3a3f44;
+    margin-bottom: 20px;
+}
+
+/* Container */
 .container {
-    background-color: #FFFFFF; /* Bright white background */
+    background-color: #fff;
     padding: 20px;
     border-radius: 8px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    width: 95%; /* Responsive width */
-    max-width: 1200px; /* Max width for larger screens */
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-h1.text-center {
-    font-size: 24px;
+/* Checkbox Group */
+.checkbox-group-container {
     margin-bottom: 20px;
-    font-weight: bold;
-    color: #2E3A59; /* Dark blue */
+}
+
+.checkbox-group {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.checkbox-group div {
+    display: flex;
+    align-items: center;
+}
+
+.checkbox-group label {
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+/* Nav Tabs */
+.nav-tabs .nav-link {
+    color: #495057;
+    border: 1px solid transparent;
+    border-top-left-radius: 0.25rem;
+    border-top-right-radius: 0.25rem;
+    background: #e9ecef;
+    margin-bottom: -1px;
+}
+
+.nav-tabs .nav-link.active {
+    color: #495057;
+    background-color: #fff;
+    border-color: #dee2e6 #dee2e6 #fff;
+}
+
+.nav-tabs .nav-item {
+    margin-bottom: 0;
+}
+
+/* DataTables Styling */
+.table {
+    margin-top: 20px;
+}
+
+.table thead th {
+    background-color: #343a40;
+    color: #fff;
     text-align: center;
 }
 
-/* Button Style */
-button, .btn {
-    background-color: #1E90FF; /* Dodger blue button */
+.table tfoot th {
+    background-color: #f8f9fa;
+    text-align: center;
+}
+
+.table tbody tr:hover {
+    background-color: #f1f3f5;
+}
+
+/* Search Input Fields */
+.search-row input[type="text"] {
+    width: 100%;
+    padding: 5px;
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    transition: border-color 0.3s;
+}
+
+.search-row input[type="text"]:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+/* Buttons */
+.btn-danger {
+    background-color: #dc3545;
+    border-color: #dc3545;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+.btn-danger:hover {
+    background-color: #c82333;
+    border-color: #bd2130;
+}
+
+.btn {
+    margin: 10px 0;
+}
+
+/* DataTable Pagination and Length */
+.dataTables_wrapper .dataTables_paginate .paginate_button {
+    padding: 6px 12px;
+    margin: 2px;
+    border-radius: 4px;
+    color: #495057;
+    border: 1px solid #ddd;
+    transition: background-color 0.3s;
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button:hover {
+    background-color: #e9ecef;
+    border-color: #ddd;
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button.current {
+    background-color: #007bff;
     color: white;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 8px;
-    cursor: pointer;
-    font-size: 14px;
-    transition: background-color 0.3s ease, box-shadow 0.3s ease;
-    align-self: center; /* Center button */
+    border: 1px solid #007bff;
 }
 
-button:hover, .btn:hover {
-    background-color: #4682B4; /* Steel blue on hover */
-    box-shadow: 0 2px 8px rgba(30, 144, 255, 0.5);
+.dataTables_wrapper .dataTables_length select {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    outline: none;
 }
 
-/* Stylish Checkbox - Simple */
-.checkbox-group {
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-    font-weight: bold;
-    color: #2E3A59; /* Dark blue */
-}
-
+/* Custom Checkboxes */
 .styled-checkbox {
-    position: absolute;
-    opacity: 0;
+    display: none;
 }
 
 .styled-checkbox + label {
     position: relative;
     padding-left: 30px;
     cursor: pointer;
-    font-size: 16px;
-    color: #333;
 }
 
 .styled-checkbox + label:before {
-    content: "";
+    content: '';
     position: absolute;
     left: 0;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 18px;
-    height: 18px;
-    border: 2px solid #2E3A59; /* Dark blue */
+    top: 2px;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #ddd;
     border-radius: 4px;
+    background: #fff;
+    transition: background 0.3s, border-color 0.3s;
 }
 
 .styled-checkbox:checked + label:before {
-    background-color: #2E3A59;
+    background: #007bff;
+    border-color: #007bff;
 }
 
 .styled-checkbox:checked + label:after {
-    content: "\2713"; /* Checkmark */
+    content: '✔';
     position: absolute;
     left: 4px;
-    top: 50%;
-    transform: translateY(-50%);
-    color: white;
+    top: -1px;
+    color: #fff;
     font-size: 14px;
 }
 
-/* Table Styling */
-table {
-    width: 100%;
-    border-collapse: collapse;
-    border-radius: 8px;
-    overflow: hidden;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin-top: 20px;
-}
-
-thead th {
-    background-color: #2E3A59; /* Dark blue */
-    color: white;
-    padding: 12px;
-    font-size: 14px;
-    border-bottom: 2px solid #1C2A3A;
-}
-
-tfoot th {
-    background-color: #A9A9A9; /* Dark gray */
-    color: white;
-    padding: 12px;
-}
-
-tbody td {
-    padding: 12px;
-    color: #333;
-    border-bottom: 1px solid #ddd;
-    text-align: center;
-}
-
-/* Responsive Table Rows */
-table.dataTable tbody tr {
-    background-color: #F8F9FA;
-}
-
-table.dataTable tbody tr:nth-child(odd) {
-    background-color: #E0E5EC;
-}
-
-table.dataTable tbody tr:hover {
-    background-color: #D1D9E0;
-}
-
-/* Input Search */
-.search-row input {
-    border: 1px solid #1E90FF;
-    padding: 8px;
-    border-radius: 8px;
-    width: 100%; /* Responsive input width */
-    max-width: 300px; /* Limit max width */
-    font-size: 14px;
-    margin: 5px 0;
-}
-
-/* Pagination and Info */
-div.dataTables_wrapper div.dataTables_paginate .paginate_button {
-    background-color: #2E3A59;
-    border: 2px solid #1E90FF;
-    color: white;
-    padding: 8px 15px;
-    margin: 0 5px;
-    border-radius: 50%;
-    transition: background-color 0.3s, box-shadow 0.3s;
-    cursor: pointer;
-    font-size: 14px;
-}
-
-div.dataTables_wrapper div.dataTables_paginate .paginate_button:hover {
-    background-color: #4682B4;
-}
-
-/* Media Queries for Responsive Design */
+/* Responsive Adjustments */
 @media (max-width: 768px) {
-    h1.text-center {
-        font-size: 20px;
-    }
-
-    button, .btn {
-        font-size: 12px;
-        padding: 8px 16px;
-    }
-
-    table thead th, tbody td {
-        padding: 8px;
-        font-size: 12px;
-    }
-
-    .search-row input {
-        max-width: 250px;
-    }
-
     .checkbox-group {
-        flex-direction: column;
-        align-items: center;
+        justify-content: flex-start;
+    }
+
+    .nav-tabs {
+        flex-wrap: wrap;
+    }
+
+    .nav-tabs .nav-link {
+        flex: 1 1 auto;
+        text-align: center;
     }
 }
