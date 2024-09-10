@@ -1,7 +1,7 @@
 /* General Body Style */
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #FFEEFF; /* Light pink background */
+    background-color: #F0F4F8; /* Light grayish-blue background */
     color: #333;
     margin: 0;
     padding: 0;
@@ -11,32 +11,32 @@ body {
 .container {
     background-color: #FFFFFF; /* Bright white background */
     padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 h1.text-center {
     font-size: 36px;
     margin-bottom: 20px;
     font-weight: bold;
-    color: #FF007F; /* Hot pink */
+    color: #2E3A59; /* Dark blue */
 }
 
 /* Button Style */
 button, .btn {
-    background-color: #FF007F; /* Hot pink button */
+    background-color: #1E90FF; /* Dodger blue button */
     color: white;
     border: none;
     padding: 10px 20px;
-    border-radius: 20px;
+    border-radius: 8px;
     cursor: pointer;
     font-size: 14px;
     transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
 
 button:hover, .btn:hover {
-    background-color: #FF69B4; /* Lighter hot pink */
-    box-shadow: 0 2px 8px rgba(255, 0, 127, 0.5);
+    background-color: #4682B4; /* Steel blue on hover */
+    box-shadow: 0 2px 8px rgba(30, 144, 255, 0.5);
 }
 
 /* Stylish Checkbox */
@@ -52,8 +52,8 @@ button:hover, .btn:hover {
     font-size: 16px;
     user-select: none;
     padding: 10px 15px;
-    border-radius: 20px;
-    background-color: #FFD700; /* Bright yellow */
+    border-radius: 8px;
+    background-color: #5F9EA0; /* Cadet blue */
     color: white;
     display: flex;
     align-items: center;
@@ -84,7 +84,7 @@ button:hover, .btn:hover {
     left: 12px;
     top: 50%;
     transform: translateY(-50%);
-    color: #FFD700; /* Bright yellow */
+    color: #5F9EA0; /* Cadet blue */
     font-size: 18px;
 }
 
@@ -97,54 +97,54 @@ button:hover, .btn:hover {
     gap: 15px;
     margin-bottom: 15px;
     font-weight: bold;
-    color: #FF4500; /* Bright orange */
+    color: #2E3A59; /* Dark blue */
 }
 
 /* Container for the checkbox group */
 .checkbox-group-container {
     padding-top: 20px;
     padding-bottom: 10px;
-    border-radius: 10px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     margin-bottom: 15px;
     margin-top: 15px;
-    background-color: #FFB6C1; /* Light pink */
+    background-color: #E0E5EC; /* Soft light gray-blue */
 }
 
 /* Table Styling */
 table {
     width: 100%;
     border-collapse: collapse;
-    border-radius: 10px;
+    border-radius: 8px;
     overflow: hidden;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 thead th {
-    background-color: #32CD32; /* Lime green */
+    background-color: #2E3A59; /* Dark blue */
     color: white;
     padding: 12px;
     font-size: 14px;
-    border-bottom: 2px solid #228B22; /* Forest green */
+    border-bottom: 2px solid #1C2A3A; /* Slightly darker blue */
 }
 
 tfoot th {
-    background-color: #98FB98; /* Pale green */
-    color: #333;
+    background-color: #A9A9A9; /* Dark gray */
+    color: white;
     padding: 12px;
 }
 
 /* Specifically targeting DataTables' row class */
 table.dataTable tbody tr {
-    background-color: #87CEEB !important; /* Sky blue background for rows */
+    background-color: #F8F9FA !important; /* Light gray background for rows */
 }
 
 table.dataTable tbody tr:nth-child(odd) {
-    background-color: #00FFFF !important; /* Cyan alternate rows */
+    background-color: #E0E5EC !important; /* Slightly darker gray alternate rows */
 }
 
 table.dataTable tbody tr:hover {
-    background-color: #7FFFD4 !important; /* Aquamarine hover color */
+    background-color: #D1D9E0 !important; /* Slightly darker hover color */
 }
 
 tbody td {
@@ -156,9 +156,9 @@ tbody td {
 
 /* Input Search */
 .search-row input {
-    border: 1px solid #FF69B4; /* Hot pink */
+    border: 1px solid #1E90FF; /* Dodger blue */
     padding: 8px;
-    border-radius: 10px;
+    border-radius: 8px;
     width: 120%;
     font-size: 14px;
     margin: 5px 0;
@@ -166,15 +166,15 @@ tbody td {
 }
 
 .search-row input:focus {
-    border-color: #FF1493; /* Deep pink */
+    border-color: #4682B4; /* Steel blue */
     outline: none;
 }
 
 /* Pagination and Info */
 div.dataTables_wrapper div.dataTables_paginate .paginate_button {
-    background-color: #FFFF00 !important; /* Bright yellow background */
-    border: 2px solid #FFA500 !important; /* Orange border */
-    color: #333 !important;
+    background-color: #2E3A59 !important; /* Dark blue background */
+    border: 2px solid #1E90FF !important; /* Dodger blue border */
+    color: white !important;
     padding: 8px 15px !important;
     margin: 0 5px !important;
     border-radius: 50% !important;
@@ -185,29 +185,29 @@ div.dataTables_wrapper div.dataTables_paginate .paginate_button {
 }
 
 div.dataTables_wrapper div.dataTables_paginate .paginate_button:hover {
-    background-color: #FFA500 !important; /* Orange hover background */
+    background-color: #4682B4 !important; /* Steel blue hover background */
     color: white !important;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2) !important;
 }
 
 div.dataTables_wrapper div.dataTables_paginate .paginate_button.current {
-    background-color: #FFA500 !important;
+    background-color: #4682B4 !important;
     color: white !important;
-    border-color: #FF4500 !important;
+    border-color: #2E3A59 !important;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3) !important;
     cursor: default !important;
 }
 
 div.dataTables_wrapper div.dataTables_paginate .paginate_button.disabled {
-    background-color: #e0e0e0 !important;
+    background-color: #D3D3D3 !important;
     color: #888 !important;
     border-color: #ddd !important;
     cursor: not-allowed !important;
     box-shadow: none !important;
 }
 
-/* Cute pagination ellipses (...) style */
+/* Pagination ellipses (...) style */
 div.dataTables_wrapper div.dataTables_paginate .ellipsis {
-    color: #FFA500 !important;
+    color: #4682B4 !important;
     font-weight: bold !important;
 }
