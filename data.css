@@ -1,23 +1,21 @@
-/* data.css */
-
 /* General Styling */
 body {
-    background-color: #f4f7fa;
+    background-color: #e0e0e0; /* Light grey for a more muted background */
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: #333;
+    color: #212121; /* Darker text color for better contrast */
 }
 
 h1 {
-    color: #3a3f44;
+    color: #1f1f1f; /* Darker shade for a more rugged look */
     margin-bottom: 20px;
 }
 
 /* Container */
 .container {
-    background-color: #fff;
+    background-color: #333; /* Dark grey for a stronger presence */
     padding: 20px;
     border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Slightly stronger shadow */
 }
 
 /* Checkbox Group */
@@ -44,18 +42,18 @@ h1 {
 
 /* Nav Tabs */
 .nav-tabs .nav-link {
-    color: #495057;
+    color: #1a1a1a; /* Darker text color */
     border: 1px solid transparent;
     border-top-left-radius: 0.25rem;
     border-top-right-radius: 0.25rem;
-    background: #e9ecef;
+    background: #4b4b4b; /* Darker grey background */
     margin-bottom: -1px;
 }
 
 .nav-tabs .nav-link.active {
-    color: #495057;
-    background-color: #fff;
-    border-color: #dee2e6 #dee2e6 #fff;
+    color: #fff; /* White text for active tab */
+    background-color: #007bff; /* Strong blue for active tab */
+    border-color: #007bff #007bff #fff;
 }
 
 .nav-tabs .nav-item {
@@ -68,18 +66,18 @@ h1 {
 }
 
 .table thead th {
-    background-color: #343a40;
+    background-color: #444; /* Darker grey for table headers */
     color: #fff;
     text-align: center;
 }
 
 .table tfoot th {
-    background-color: #f8f9fa;
+    background-color: #666; /* Medium grey for table footers */
     text-align: center;
 }
 
 .table tbody tr:hover {
-    background-color: #f1f3f5;
+    background-color: #555; /* Slightly darker grey for row hover */
 }
 
 /* Search Input Fields */
@@ -87,26 +85,26 @@ h1 {
     width: 100%;
     padding: 5px;
     box-sizing: border-box;
-    border: 1px solid #ddd;
+    border: 1px solid #888; /* Darker border color */
     border-radius: 4px;
     transition: border-color 0.3s;
 }
 
 .search-row input[type="text"]:focus {
-    border-color: #007bff;
+    border-color: #007bff; /* Strong blue on focus */
     outline: none;
 }
 
 /* Buttons */
 .btn-danger {
-    background-color: #dc3545;
-    border-color: #dc3545;
+    background-color: #c82333; /* Dark red for danger button */
+    border-color: #c82333;
     transition: background-color 0.3s, border-color 0.3s;
 }
 
 .btn-danger:hover {
-    background-color: #c82333;
-    border-color: #bd2130;
+    background-color: #bd2130; /* Darker red on hover */
+    border-color: #b21f2d;
 }
 
 .btn {
@@ -118,24 +116,24 @@ h1 {
     padding: 6px 12px;
     margin: 2px;
     border-radius: 4px;
-    color: #495057;
-    border: 1px solid #ddd;
+    color: #1a1a1a;
+    border: 1px solid #888;
     transition: background-color 0.3s;
 }
 
 .dataTables_wrapper .dataTables_paginate .paginate_button:hover {
-    background-color: #e9ecef;
-    border-color: #ddd;
+    background-color: #444; /* Darker grey on hover */
+    border-color: #666;
 }
 
 .dataTables_wrapper .dataTables_paginate .paginate_button.current {
-    background-color: #007bff;
+    background-color: #007bff; /* Strong blue for current button */
     color: white;
     border: 1px solid #007bff;
 }
 
 .dataTables_wrapper .dataTables_length select {
-    border: 1px solid #ddd;
+    border: 1px solid #888; /* Darker border for select element */
     border-radius: 4px;
     padding: 5px;
     outline: none;
@@ -159,14 +157,14 @@ h1 {
     top: 2px;
     width: 20px;
     height: 20px;
-    border: 1px solid #ddd;
+    border: 1px solid #888;
     border-radius: 4px;
-    background: #fff;
+    background: #333; /* Dark grey background */
     transition: background 0.3s, border-color 0.3s;
 }
 
 .styled-checkbox:checked + label:before {
-    background: #007bff;
+    background: #007bff; /* Strong blue for checked state */
     border-color: #007bff;
 }
 
